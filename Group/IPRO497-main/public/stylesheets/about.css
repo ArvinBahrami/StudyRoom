@@ -1,0 +1,50 @@
+#res-floor-plan-info{
+    margin-top:2%;
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+#floor-plan-info{
+    flex:2;
+    padding:2%;
+}
+
+#room-info{
+    display:flex;
+    flex:2 ;
+    padding:2%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#single-room-info{
+    padding-bottom:5%;
+}
+
+#floor-plan-info img{
+    max-width:100%;
+    height:auto;
+}
+
+#room-info img{
+    width:100%;
+    height:auto;
+}
+
+#avail-prompt{
+    margin-top:10%;
+}
+#avail-btn{
+    font-size: 20px;
+    padding: 2% 5%;
+    text-align: center;
+    text-decoration:none;
+    border-radius: 5px;
+    background-color:#47525E;
+    color: white;
+}
+

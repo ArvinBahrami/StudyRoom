@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PaGa Student Room Reservation</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Other Stylesheets and Fonts -->
+    <link rel="stylesheet" href="stylesheets/header.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+
+        <div class = "container">    
+            
+            
+            <a class="navbar-brand" href="/">
+            </a>
+
+            <button class="navbar-toggler ml-auto hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id ="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <% if(currentUser != null) { %>
+                                <a class="nav-link" href="/reserve">Reserve</a>
+                            <%}%>
+                                
+                            <% if(currentUser == null) { %>
+                                <a class="nav-link" href="/login">Reserve</a>
+                            <%}%>
+                        </li>
+        
+                        <% if(currentUser != null) { %>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profile">
+                                        <span class="nowrap">Welcome <%= currentUser.First_Name %> <%= currentUser.Last_Name %> !</span>
+                                </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                        <%}%>
+        
+                        <% if(currentUser == null) { %> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">
+                                    <span class="nowrap">Log In</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/signup">
+                                    <span class="nowrap">Sign Up</span>
+                                </a>
+                            </li>
+                        <%}%>
+                    
+                    </ul>
+            </div>
+        </div>
+    </nav>
+ 
+<div class="container"></div>

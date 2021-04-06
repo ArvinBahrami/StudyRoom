@@ -1,0 +1,47 @@
+<%- include('../_partial/_header'); -%>
+
+<!-- Load customized css -->
+<link rel="stylesheet" href="stylesheets/home.css"> 
+
+<div class="container" id="general-info">
+    <span id="main-title"> 
+        <h1>
+            <b style="color:#CC0100;">P</b>a<b style="color:#CC0100;">G</b>a Student Room Reservation
+        </h1>
+        
+    </span>
+
+    <div id="sub-info">
+        <h4>Amenities</h4>
+        <p>All study rooms are equipped with whitebords and markers.</p>
+        <p>Group Study Rooms have connections to hook laptops to flat panel screens.</p>
+        <p>The Circulation Desk has cabels and adapters available for checkout.</p>
+    </div>
+
+    <div id="sub-info">
+        <h4>Please review the guidelines before reserving</h4>
+        <p>Study rooms are for the use of current Illinois Tech students</p>
+        <p>Users may reserve an individual or group study room for up to 3 hours a day.</p>
+        <p>Individuals may reserve rooms for 9 hours total for any given week (Sun-Sat).</p>
+        <p>You must have a reservation to use an individual and/or group study room.</p>
+        <p>Consecutive,concurrent, or recurring reservatino are not premitted.</p>
+        <p>Reservations cannot be placeed over the phone or by e-mail.</p>
+    </div>
+
+    <div id="reserve-btn-prompt">
+        <p style="font-size: 20px;">Make Your Study Room Reservation Today</p>
+    </div>
+
+    <div id="reserve-btn-area">
+        <% if(currentUser != null) { %>
+            <a href="/reserve" id ="reserve-btn"> Reserve</a>
+        <%}%>
+
+        <% if(currentUser == null) { %>
+            <a href="/login" id ="reserve-btn"> Reserve</a>
+        <%}%>
+    </div>
+</div>
+
+
+<%- include ('../_partial/_footer'); -%>

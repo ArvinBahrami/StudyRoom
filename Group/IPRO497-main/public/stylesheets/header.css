@@ -1,0 +1,77 @@
+
+body{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:1vw;
+    color:#626567;
+    background-color: #E5E9F2;
+}  
+
+
+@media (max-width: 769px) {
+    nav a {
+        font-size: 14px;
+        color: #626567;
+        text-decoration: none;
+    }
+}
+@media (max-width: 850px) {
+    nav a {
+        font-size: 16px;
+        color: #626567;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 850px) {
+    nav a {
+        font-size: 18px;
+        color: #626567;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav a {
+        font-size: 20px;
+        color: #626567;
+        text-decoration: none;
+    }
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+}
+.nav-item {
+    /*width: 25%; Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+    padding: 0.5em;
+}
+
+
+.nowrap{
+    white-space:nowrap;
+}
+
+html, body { height: 100%; }
+
+.navbar-toggler { 
+    display: inline-block;
+}
+
+.navbar-brand{
+    padding: 3rem 0;
+    width: 60%;
+    height:auto;
+    background: url(../images/iit_logo.png) no-repeat center center;
+    background-size: 60%;
+}
+  
+.nav-item a:hover{
+    background-color: #DDE2EC;
+    opacity:0.6;
+}
+

@@ -1,0 +1,61 @@
+
+
+#general-info{
+    width:80%;
+
+    padding-top: 7%;
+}
+
+#main-title{
+    font-weight: bold;
+    font-size: 3em;
+    color:#47525E;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#main-title > h1{
+    text-align: center;
+}
+  
+#sub-info{
+    padding-top:2%;
+
+}
+#sub-info h4{
+    color:#47525E;
+    padding-bottom: 2%;
+    text-align: center;
+}
+#general-info p{
+    font-size: 16px;
+    text-align: center;
+    line-height:90%;
+}
+  
+#reserve-btn-prompt{
+    color:#8190A5;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#reserve-btn-area{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#reserve-btn{
+    font-size: 20px;
+    padding: 1% 5%;
+    text-align: center;
+    text-decoration:none;
+    border-radius: 5px;
+    background-color:#47525E;
+    color: white;
+}
+  
+  
+  
